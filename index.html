@@ -1,336 +1,163 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="ELP Legal Dictionary - Egyptian Legal Portal"
-  >
-
+  <meta name="description" content="ELP Legal Dictionary - Egyptian Legal Portal">
   <title>قاموس البوابة القانونية المصرية | ELP</title>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
-
-
-<body>
-
-
-  <!-- =====================================================
-       HEADER
-  ====================================================== -->
-
-  <header class="site-header">
-
-    <!-- TOP BAR -->
-    <div class="topbar">
-
-      <div class="container topbar-inner">
-
-        <!-- BRAND -->
-        <a
-          href="#"
-          class="brand"
-          data-route="home"
-        >
-
-          <span class="brand-mark">
-            ELP
-          </span>
-
-          <span class="brand-copy">
-
-            <strong>
-              البوابة القانونية المصرية
-            </strong>
-
-            <small>
-              القاموس القانوني
-            </small>
-
-          </span>
-
-        </a>
-
-
-        <!-- TOP NAVIGATION -->
-        <nav
-          class="top-nav"
-          aria-label="التنقل الرئيسي"
-        >
-
-          <button
-            class="nav-link active"
-            data-route="home"
-            type="button"
-          >
-            الرئيسية
-          </button>
-
-
-          <button
-            class="nav-link"
-            data-route="browse"
-            type="button"
-          >
-            تصفح
-          </button>
-
-
-          <button
-            class="nav-link"
-            data-route="bookmarks"
-            type="button"
-          >
-
-            المحفوظات
-
-            <span
-              id="savedCount"
-              class="nav-count"
-            >
-              0
-            </span>
-
-          </button>
-
-        </nav>
-
-      </div>
-
-    </div>
-
-
-    <!-- SECOND NAVIGATION -->
-    <div class="main-nav">
-
-      <div class="container main-nav-inner">
-
-
-        <!-- PORTAL TITLE -->
-        <div class="portal-title">
-
-          <span class="portal-icon">
-            ⚖
-          </span>
-
-          <div>
-
-            <strong>
-              البوابة القانونية المصرية
-            </strong>
-
-            <small>
-              ELP Legal Information Services
-            </small>
-
-          </div>
-
-        </div>
-
-
-        <!-- MAIN LINKS -->
-        <nav
-          class="main-links"
-          aria-label="روابط القاموس"
-        >
-
-          <button
-            data-route="home"
-            type="button"
-          >
-            القاموس
-          </button>
-
-
-          <button
-            data-route="browse"
-            type="button"
-          >
-            التصنيفات القانونية
-          </button>
-
-
-          <button
-            data-route="recent"
-            type="button"
-          >
-            شوهد مؤخرًا
-          </button>
-
-        </nav>
-
-      </div>
-
-    </div>
-
-  </header>
-
-
-
-  <!-- =====================================================
-       MAIN APP
-       
-       app.js renders:
-       - Home
-       - Search
-       - Categories
-       - Alphabet
-       - Results
-       - Term details
-       - Bookmarks
-       - Recently viewed
-  ====================================================== -->
-
-  <main
-    id="app"
-    tabindex="-1"
-  ></main>
-
-
-
-  <!-- =====================================================
-       FOOTER
-  ====================================================== -->
-
-  <footer class="footer">
-
-    <div class="container footer-grid">
-
-
-      <!-- FOOTER BRAND -->
-      <div>
-
-        <div class="footer-brand">
-
-          <span class="brand-mark">
-            ELP
-          </span>
-
-          القاموس القانوني
-
-        </div>
-
-
-        <p>
-          قاموس قانوني تجريبي يساعد المستخدمين على البحث عن
-          المصطلحات القانونية وفهم معانيها بطريقة منظمة وسهلة.
-        </p>
-
-      </div>
-
-
-
-      <!-- EXPLORE -->
-      <div>
-
-        <h4>
-          استكشف
-        </h4>
-
-
-        <button
-          data-route="home"
-          type="button"
-        >
-          الرئيسية
-        </button>
-
-
-        <button
-          data-route="browse"
-          type="button"
-        >
-          تصفح المصطلحات
-        </button>
-
-
-        <button
-          data-route="bookmarks"
-          type="button"
-        >
-          المصطلحات المحفوظة
-        </button>
-
-      </div>
-
-
-
-      <!-- ABOUT -->
-      <div>
-
-        <h4>
-          عن القاموس
-        </h4>
-
-
-        <p>
-          محتوى تجريبي لأغراض التدريب والنموذج الأولي،
-          ولا يُعد استشارة قانونية رسمية.
-        </p>
-
-      </div>
-
-    </div>
-
-
-
-    <!-- FOOTER BOTTOM -->
-    <div class="footer-bottom">
-
-      <div class="container">
-
-        قاموس ELP القانوني • برنامج التدريب • 2026
-
-      </div>
-
-    </div>
-
-  </footer>
-
-
-
-  <!-- =====================================================
-       TOAST
-  ====================================================== -->
-
-  <div
-    id="toast"
-    class="toast"
-    role="status"
-    aria-live="polite"
-  ></div>
-
-
-
-  <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
-
-  <script src="app.js"></script>
-
-</body>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+ 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+ 
+<body> 
+ 
+<header class="site-header"> 
+ 
+  <div class="topbar"> 
+    <div class="container topbar-inner"> 
+ 
+      <a href="#" class="brand" data-route="home"> 
+        <span class="brand-mark">ELP</span> 
+ 
+        <span class="brand-copy"> 
+          <strong>البوابة القانونية المصرية</strong> 
+          <small>القاموس القانوني</small> 
+        </span> 
+      </a> 
+ 
+      <nav class="top-nav"> 
+ 
+        <button class="nav-link active" data-route="home"> 
+          الرئيسية 
+        </button> 
+ 
+        <button class="nav-link" data-route="browse"> 
+          تصفح 
+        </button> 
+ 
+        <button class="nav-link" data-route="bookmarks"> 
+          المحفوظات 
+          <span id="savedCount" class="nav-count">0</span> 
+        </button> 
+ 
+      </nav> 
+ 
+    </div> 
+  </div> 
+ 
+  <div class="main-nav"> 
+ 
+    <div class="container main-nav-inner"> 
+ 
+      <div class="portal-title"> 
+ 
+        <span class="portal-icon">⚖</span> 
+ 
+        <div> 
+          <strong>البوابة القانونية المصرية</strong> 
+          <small>ELP Legal Information Services</small> 
+        </div> 
+ 
+      </div> 
+ 
+      <div class="main-links"> 
+ 
+        <button data-route="home"> 
+          القاموس 
+        </button> 
+ 
+        <button data-route="browse"> 
+          التصنيفات القانونية 
+        </button> 
+ 
+        <button data-route="recent"> 
+          شوهد مؤخرًا 
+        </button> 
+ 
+      </div> 
+ 
+    </div> 
+ 
+  </div> 
+ 
+</header> 
+ 
+ 
+<main id="app" tabindex="-1"></main> 
+ 
+ 
+<footer class="footer"> 
+ 
+  <div class="container footer-grid"> 
+ 
+    <div> 
+ 
+      <div class="footer-brand"> 
+        <span class="brand-mark">ELP</span> 
+        القاموس القانوني 
+      </div> 
+ 
+      <p> 
+        قاموس قانوني تجريبي يساعد المستخدمين على البحث عن المصطلحات 
+        القانونية وفهم معانيها بطريقة منظمة وسهلة. 
+      </p> 
+ 
+    </div> 
+ 
+ 
+    <div> 
+ 
+      <h4>استكشف</h4> 
+ 
+      <button data-route="home"> 
+        الرئيسية 
+      </button> 
+ 
+      <button data-route="browse"> 
+        تصفح المصطلحات 
+      </button> 
+ 
+      <button data-route="bookmarks"> 
+        المصطلحات المحفوظة 
+      </button> 
+ 
+    </div> 
+ 
+ 
+    <div> 
+ 
+      <h4>عن القاموس</h4> 
+ 
+      <p> 
+        محتوى تجريبي لأغراض التدريب والنموذج الأولي، 
+        ولا يُعد استشارة قانونية رسمية. 
+      </p> 
+ 
+    </div> 
+ 
+  </div> 
+ 
+ 
+  <div class="footer-bottom"> 
+ 
+    <div class="container"> 
+      قاموس ELP القانوني • برنامج التدريب • 2026 
+    </div> 
+ 
+  </div> 
+ 
+</footer> 
+ 
+ 
+<div id="toast" class="toast"></div> 
+ 
+ 
+<script src="app.js"></script> 
+ 
+</body> 
 </html>
